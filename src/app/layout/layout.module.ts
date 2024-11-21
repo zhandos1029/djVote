@@ -3,7 +3,6 @@ import { LayoutComponent } from 'app/layout/layout.component';
 import { EmptyLayoutModule } from 'app/layout/layouts/empty/empty.module';
 import { ModernLayoutModule } from 'app/layout/layouts/horizontal/modern/modern.module';
 import { ClassicLayoutModule } from 'app/layout/layouts/vertical/classic/classic.module';
-import { SettingsModule } from 'app/layout/common/settings/settings.module';
 import { SharedModule } from 'app/shared/shared.module';
 
 const layoutModules = [
@@ -22,7 +21,6 @@ const layoutModules = [
     ],
     imports     : [
         SharedModule,
-        SettingsModule,
         ...layoutModules
     ],
     exports     : [
